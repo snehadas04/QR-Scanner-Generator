@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Coding By Ali Aslan -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Code Generator</title>
+    <!-- Modal Library -->
+    <link rel="stylesheet" href="https://myskypower.net/components/modal/modal.css">
+    <script src="https://myskypower.net/components/modal/modal.js" defer></script>
+
+    <link rel="stylesheet" href="css/generator.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h1>QR Code Generator</h1>
+        <p>Paste a url or enter text to create QR code</p>
+      </header>
+      <div class="form">
+        <input type="text" spellcheck="false" placeholder="Enter text or url">
+       
+        <div class="btnPos">
+        <button>Generate QR Code</button>
+        <button id="goback">Go Back</button>
+       </div> 
+       <div class="footer"><a class="footer-link" target="_blank" href="https://myskypower.net/">By My Sky Power</a></div>
+
+      </div>
+      <div class="qr-code">
+        <img src="" alt="qr-code">
+      </div>
+      
+    </div>
+
+
+
+<!-- COPY THIS  -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- Modal content -->
+<div class="modal-content">
+<span class="close">&times;</span>
+<p id="modalText"></p>
+</div></div>
+<!-- END OF COPY  -->
+
+
+    <script src="js/generator.js"></script>
+
+  </body>
+</html>
+
+<script>
+      let goback = document.getElementById("goback");
+      goback.addEventListener("click", ()=>{
+      window.location.href = "index.html";
+      });
+</script>

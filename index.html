@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Scanner & Generator</title>
+  <link rel="stylesheet" href="css/generator.css">
+</head>
+<body>
+  <div class="main">
+    <header>
+      <div>
+        <h1>QR Code Generator & scanner</h1>
+      </div>
+    </header>
+    <div class="form">
+      <button id="gqc">Generate QR Code</button>
+      <button id="rqc">scan QR Code</button>
+
+      <div class="footer"><a class="footer-link" target="_blank" href="https://myskypower.net/">By My Sky Power</a>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+
+<script>
+  let generateQrCode = document.getElementById("gqc");
+  let scanQrCode = document.getElementById("rqc");
+
+  generateQrCode.addEventListener("click", () => {
+    window.location.href = "generator.html";
+  })
+
+  scanQrCode.addEventListener("click", () => {
+    window.location.href = "scanner.html";
+  })
+
+</script>
