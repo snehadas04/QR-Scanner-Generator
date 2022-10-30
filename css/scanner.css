@@ -149,25 +149,6 @@ textarea:hover::-webkit-scrollbar-thumb{
 }
 
 
-
-.footer{
-  margin-top: 10px;
-}
-
-.footer .footer-link{
-  text-decoration: none;
-  color: #fcf8f8;
-  font-size: small;
-  padding-left: 5px;
-  transition: all 0.5s;
-}
-
-.footer .footer-link:hover{
-  color: #4b9dd4;
-}
-
-
-
 @media (max-width: 450px) {
   .main{
     padding: 25px;

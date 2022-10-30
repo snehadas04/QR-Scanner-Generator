@@ -11,33 +11,30 @@
 <body>
   <div class="main">
     <header>
-      <div>
-        <h1>QR Code Generator & scanner</h1>
-      </div>
+      <h1>QR Code</h1>
+      <h2>Generator & Scanner</h2>
     </header>
     <div class="form">
       <button id="gqc">Generate QR Code</button>
-      <button id="rqc">scan QR Code</button>
-
-      <div class="footer"><a class="footer-link" target="_blank" href="https://myskypower.net/">By My Sky Power</a>
-      </div>
+      <button id="sqc">Scan QR Code</button>
     </div>
   </div>
-
 
 </body>
 
 </html>
 
+
+
 <script>
   let generateQrCode = document.getElementById("gqc");
-  let scanQrCode = document.getElementById("rqc");
+  let scannerQrCode = document.getElementById("sqc");
 
   generateQrCode.addEventListener("click", () => {
     window.location.href = "generator.html";
   })
 
-  scanQrCode.addEventListener("click", () => {
+  scannerQrCode.addEventListener("click", () => {
     window.location.href = "scanner.html";
   })
 
