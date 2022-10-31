@@ -1,62 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">  
-    <title>QR Code scanner</title>
-    <link rel="stylesheet" href="css/scanner.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome CDN Link for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-      <!-- Modal Library -->
-      <link rel="stylesheet" href="https://myskypower.net/components/modal/modal.css">
-      <script src="https://myskypower.net/components/modal/modal.js" defer></script>
-      <link rel="stylesheet" href="https://myskypower.net/components/downloadButton/downloadButton.css">
-  
-  </head>
-  <body>
+<html lang="en">
 
-<div class="main">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code scanner</title>
+  <link rel="stylesheet" href="css/scanner.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
 
-        <button class="back">Back</button>
-      <form action="#">
-        <input type="file" hidden>
-        <img src="#" alt="qr-code">
-        <div class="content">
-          <i class="fas fa-cloud-upload"></i>
-          <p>Upload QR Code to scan</p>
-        </div>
-      </form>
-      <div class="details">
-        <textarea spellcheck="false" disabled></textarea>
-        <div class="buttons">
-          <button class="closeForm">Close</button>
-          <button class="copy">Copy Text</button>
-        </div>
+<body>
+  <div class="main">
+    <header>
+      <h1>QR Code</h1>
+      <h2>Generator</h2>
+      <p>Upload QR Code to scan</p>
+    </header>
+    <form action="#">
+      <input type="file" hidden>
+      <img src="#" alt="qr-code">
+      <div class="content">
+        <i class="fas fa-cloud-upload"></i>
+        <p>Upload QR Code</p>
       </div>
-
-</div>
+    </form>
+    <button class="back">Go Back</button>
+    <div class="details">
+      <textarea spellcheck="false" disabled></textarea>
+      <div class="buttons">
+        <button class="closeForm">Close</button>
+        <button class="copy">Copy Text</button>
+      </div>
+    </div>
+  </div>
 
 
   <!-- COPY THIS  -->
   <!-- The Modal -->
   <div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-  <span class="close">&times;</span>
-  <p id="modalText"></p>
-  </div></div>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div>
+  </div>
   <!-- END OF COPY  -->
 
-  
-    <script src="js/scanner.js"></script>
 
-  </body>
-  </html>
+  <script src="js/scanner.js"></script>
+
+</body>
+
+</html>
 
 <script>
-      let back = document.querySelector(".back");
+  let back = document.querySelector(".back");
 
-      back.addEventListener("click", ()=>{
+  back.addEventListener("click", () => {
     window.location.href = "index.html";
-    })
+  })
 </script>

@@ -1,106 +1,136 @@
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
   padding: 0 10px;
-  background: #3498DB;
+  min-height: 100vh;
+  align-items: center;
+  background: #fff;
+  justify-content: center;
 }
-.main{
-  height: 370px;
-  width: 420px;
-  border-radius: 7px;
-  background: #393939;
-  padding: 30px 30px 35px;
-  transition: height 0.2s ease;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+.main {
+  height: 430px;
+  width: 480px;
+  background: rgb(250, 10, 70);
+  border: 8px solid rgb(252, 206, 170);
+  border-radius: 20px;
+  padding: 20px 25px 0;
+  box-shadow: 0 10px 30px rgba(68, 29, 36, 0.1);
 }
-.main.active{
-  height: 610px;
+
+.main.active {
+  height: 550px;
 }
-.main form{
-  height: 210px;
+
+header h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+header p {
+  margin-top: 5px;
+  text-align: center;
+  color: rgb(251, 240, 236);
+  font-size: 18px;
+}
+
+.main button {
+  width: 40%;
+  height: 45px;
+  margin-top: -12px;
+  border: 4px solid rgb(251, 240, 236);
+  border-radius: 15px;
+  transition: 0.1s ease;
+}
+
+.main .back {
+  color: rgb(250, 10, 70);
+  cursor: pointer;
+  float: right;
+  font-size: 25px;
+  font-weight: 800;
+  background: rgb(252, 206, 170);
+}
+
+.main .back:hover {
+  cursor: pointer;
+  background: rgb(114, 253, 116);
+  font-size: 28px;
+}
+
+.main form {
+  margin: 23px;
+  height: 200px;
   display: flex;
   cursor: pointer;
   user-select: none;
   text-align: center;
-  border-radius: 7px;
+  border: 4px solid rgb(251, 240, 236);
+  border-radius: 15px;
   background: #fff;
   align-items: center;
   justify-content: center;
   transition: height 0.2s ease;
 }
-.main.active form{
+
+.main.active form {
   height: 225px;
   pointer-events: none;
 }
 
-.main .back{
-    position: relative;
-    top: 0%;
-    left: 0%;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 17px;
-    background: #3498DB;
-    width: 20%;
-    height: 35px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    transition: 0.1s ease;
-    margin-bottom: 10px;
-
-
-}
-
-.main .back:hover{
-  color: #fff;
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 17px;
-  background: #4b9dd4;
-}
-
-form img{
+form img {
   display: none;
-  max-width: 148px;
+  max-width: 140px;
 }
-.main.active form img{
+
+.main.active form img {
   display: block;
 }
-.main.active form .content{
+
+.main.active form .content {
   display: none;
 }
-form .content i{
-  color: #0B85FF;
-  font-size: 55px;
+
+form .content i {
+  color: rgb(252, 206, 170);
+  font-size: 60px;
 }
-form .content p{
-  color: #0B85FF;
+
+form .content p {
+  color: #999;
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 20px;
 }
-.main .details{
+
+.main .details {
   opacity: 0;
   margin-top: 25px;
   pointer-events: none;
 }
-.main.active .details{
+
+.main.active .details {
   opacity: 1;
   pointer-events: auto;
   transition: opacity 0.5s 0.05s ease;
 }
-.details textarea{
+
+.details textarea {
   width: 100%;
   height: 128px;
   outline: none;
@@ -112,26 +142,32 @@ form .content p{
   padding: 10px 15px;
   border: 1px solid #fff;
 }
-textarea::-webkit-scrollbar{
+
+textarea::-webkit-scrollbar {
   width: 0px;
 }
-textarea:hover::-webkit-scrollbar{
+
+textarea:hover::-webkit-scrollbar {
   width: 5px;
 }
-textarea:hover::-webkit-scrollbar-track{
+
+textarea:hover::-webkit-scrollbar-track {
   background: none;
 }
-textarea:hover::-webkit-scrollbar-thumb{
+
+textarea:hover::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 8px;
 }
-.details .buttons{
+
+.details .buttons {
   display: flex;
   margin-top: 20px;
   align-items: center;
   justify-content: space-between;
 }
-.buttons button{
+
+.buttons button {
   height: 55px;
   outline: none;
   border: none;
@@ -144,17 +180,19 @@ textarea:hover::-webkit-scrollbar-thumb{
   transition: transform 0.3s ease;
   width: calc(100% / 2 - 10px);
 }
-.buttons button:active{
+
+.buttons button:active {
   transform: scale(0.95);
 }
 
 
 @media (max-width: 450px) {
-  .main{
+  .main {
     padding: 25px;
     height: 360px;
   }
-  .main.active{
+
+  .main.active {
     height: 610px;
   }
 }

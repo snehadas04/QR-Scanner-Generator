@@ -46,7 +46,7 @@ header p {
   margin-top: 5px;
   text-align: center;
   color: rgb(251, 240, 236);
-  font-size: 16px;
+  font-size: 18px;
 } 
 
 .main .form {
@@ -120,11 +120,11 @@ header p {
 }
 
 .gen-btn button {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .gen-btn button:hover {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 @media (max-width: 430px) {
